@@ -1,0 +1,55 @@
+header {
+    color: #4B49E8;
+
+}
+
+.top {
+    background-color: #4B49E8;
+    padding: 100px;
+    text-align: center;
+}
+
+.top h1 {
+    font-size: 26px;
+    color: white;
+}
+
+.top h5 {
+    font-size: 20px;
+    color: white;
+}
+
+.top button {
+    color: white;
+    background-color: #ED4385;
+    padding: 12px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px #22184e;
+}
+
+.info {
+    font-size: 22px;
+    color: #5722CD;
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+}
+.klik {
+    font-size: 14px;
+    flex-basis: auto;
+    text-align: center; 
+    color: #0C0C0C;
+}
+
+body{
+    background-color: #F2F0FF;
+}
+
+.Rolling {
+    flex: auto;
+}
+
+.Rolling1 {
+    flex: auto;
+    flex-direction: column;
+}
