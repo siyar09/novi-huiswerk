@@ -1,55 +1,255 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: #F2F0FF;
+}
 header {
-    color: #4B49E8;
-
-}
-
-.top {
     background-color: #4B49E8;
-    padding: 100px;
+    color: #ffffff;
+    padding: 8px 0 120px;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-.top h1 {
-    font-size: 26px;
-    color: white;
-}
-
-.top h5 {
-    font-size: 20px;
-    color: white;
-}
-
-.top button {
+.header button {
     color: white;
     background-color: #ED4385;
+    margin: 10px;
     padding: 12px 20px;
     border-radius: 20px;
     box-shadow: 0 0 6px #22184e;
 }
 
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+    margin: 20px 35px;
+    list-style: none; /* Verwijdert standaard opsommingstekens */
+    padding: 0;
+}
+
+.header-nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
 .info {
-    font-size: 22px;
+    font-size: 28px;
     color: #5722CD;
     text-align: center;
-    padding: 40px;
+    padding: 100px;
     background-color: rgb(255, 255, 255);
 }
 .klik {
-    font-size: 14px;
+    font-size: 16px;
     flex-basis: auto;
     text-align: center; 
+    background-color: #ffffff;
+    padding: 20px 0 60px;
     color: #0C0C0C;
+
 }
 
-body{
+.klik a {
+    text-decoration: none;
+    color: #5722CD;
+}
+
+.rolling-stone-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #F2F0FF;
+    padding: 40px;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border: #000 solid 1px;
+
 }
 
-.Rolling {
-    flex: auto;
-}
-
-.Rolling1 {
-    flex: auto;
+.rolling-stone-text {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 40px ;
+}
+
+.rolling-stone-text img {
+    width: 100%; 
+    max-width: 60px; 
+    height: auto; 
+}
+
+.rolling-stone-text p {
+    margin-top: 40px;
+}
+
+.rolling-stone-text a {
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.rolling-stone-img {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 2;
+    border-radius: 8px;
+    box-shadow: 2px 14px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px 20px 20px;
+}
+
+
+
+
+.variety-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: #F2F0FF;
+    padding: 40px;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border: #000 solid 1px;
+
+}
+
+.variety-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 40px ;
+}
+
+.variety-text img {
+    width: 100%; 
+    max-width: 60px; 
+    height: auto; 
+}
+
+.variety-text p {
+    margin-top: 40px;
+}
+
+.variety-text a {
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.variety-img {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 2;
+    border-radius: 8px;
+    box-shadow: 2px 14px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px 20px 20px;
+}
+
+
+
+
+.worth-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F0FF;
+    padding: 40px;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border: #000 solid 1px;
+
+}
+
+.worth-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 40px ;
+}
+
+.worth-text img {
+    width: 100%; 
+    max-width: 60px; 
+    height: auto; 
+}
+
+.worth-text p {
+    margin-top: 40px;
+}
+
+.worth-text a {
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.worth-img {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 2;
+    border-radius: 8px;
+    box-shadow: 2px 14px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px 20px 20px;
+}
+
+.blokjes-wrapper {
+    display: flex;
+    justify-content: center; /* Centreert de blokken horizontaal */
+    padding: 60px 0 60px;
+    background-color: #ffffff;
+}
+
+.in-blokjes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* Zorgt ervoor dat de blokken in nieuwe rijen gaan als de ruimte vol is */
+    gap: 40px; /* Zorgt voor gelijke afstand tussen de blokken */
+}
+
+.blokjes {
+    /* De tegel moet in de basis 480px breed zijn */
+    flex-basis: 384px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: white;
+    border: 1px solid #5722CD;
+    box-shadow: 0 11px 16px 0 rgba(0, 0, 0, 0.1);
+    color: #7A7A7A;
+    font-size: 16px;
+    height: 300px; /* Standaard hoogte voor de blokken, je kunt dit aanpassen afhankelijk van de gewenste grootte */
+}
+
+.blokjes img {
+    width: 90px; /* Pictogram grootte aangepast */
+    height: auto;
+}
+
+.blokjes h3 {
+    font-size: 26px; /* Kleinere lettergrootte */
+    color: #5722CD;
+    margin-bottom: 6px; /* Minder ruimte onder de titel */
+}
+
+.blokjes p {
+    font-size: 14px; /* Kleinere lettergrootte voor de tekst */
+    color: #555;
+    line-height: 1.5;
 }
