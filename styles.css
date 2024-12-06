@@ -7,7 +7,9 @@ main{
     background-color: #F2F0FF;
 }
 header {
-    background-color: #4B49E8;
+    background: ##F2F0FF;
+    /*Mocht een verouderde browser geen gradients ondersteunen, dan valt de browser terug op de "effen" achtergrondkleur hierboven*/
+    background: linear-gradient(129deg, #4B49E8 0%, #4B49E8 26%, #5722CD  100%);
     color: #ffffff;
     padding: 8px 0 120px;
     text-align: center;
@@ -15,19 +17,26 @@ header {
 }
 
 .header button {
+    width: 250px;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 270px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: white;
     background-color: #ED4385;
-    margin: 10px;
-    padding: 12px 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 6px #22184e;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 8px 4px rgba(0, 0, 0, .2);
+    padding: 20px 20px;
+    margin: 28px 0;
 }
 
 
 .header-nav {
     display: flex;
     flex-direction: column;
-    color: #000;
+    color: #000000;
 }
 
 .header-nav-list {
@@ -76,7 +85,6 @@ header {
     padding: 40px;
     box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    border: #000 solid 1px;
 
 }
 
@@ -123,7 +131,6 @@ header {
     padding: 40px;
     box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    border: #000 solid 1px;
 
 }
 
@@ -252,4 +259,88 @@ header {
     font-size: 14px; /* Kleinere lettergrootte voor de tekst */
     color: #555;
     line-height: 1.5;
+}
+
+
+.contact {
+    background: #4B49E8;
+    /*Mocht een verouderde browser geen gradients ondersteunen, dan valt de browser terug op de "effen" achtergrondkleur hierboven*/
+    background: linear-gradient(129deg, #4B49E8 0%, #4B49E8 26%, #5722CD  100%);
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.contact-info-blokjes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+
+
+label {
+    display: block; /* Zorgt ervoor dat het label boven de input verschijnt */
+    margin-top: 20px; /* Ruimte tussen het label en het inputveld */
+    font-size: 16px; /* Pas eventueel de tekstgrootte aan */
+    text-align: left; /* Zorg dat het label links blijft uitgelijnd */
+}
+
+#name {
+    width: 700px;
+    padding: 14px 14px 14px;
+    border-radius: 4px;
+    display: inline-block;    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#email {
+    width: 700px;
+    padding: 14px 14px 14px;
+    border-radius: 4px;
+    display: inline-block;    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#message {
+    width: 700px;
+    padding: 14px 14px 200px;
+    border-radius: 4px;
+    display: inline-block;    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contact-info-blokjes form {
+    display: flex;
+    flex-direction: column; /* Zorgt dat alle elementen onder elkaar staan */
+    text-align: left;
+    gap: 2px; /* Ruimte tussen velden en knop */
+}
+
+.contact-info-blokjes button {
+    width: 180px;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 150px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    background-color: #ED4385;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 8px 4px rgba(0, 0, 0, .2);
+    padding: 20px 40px;
+    margin: 28px 0;
+}
+
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 12px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
 }
