@@ -6,8 +6,10 @@ body, html {
 main{
     background-color: #F2F0FF;
 }
+
+
 header {
-    background: ##F2F0FF;
+    background: #F2F0FF;
     /*Mocht een verouderde browser geen gradients ondersteunen, dan valt de browser terug op de "effen" achtergrondkleur hierboven*/
     background: linear-gradient(129deg, #4B49E8 0%, #4B49E8 26%, #5722CD  100%);
     color: #ffffff;
@@ -81,10 +83,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #F2F0FF;
     padding: 40px;
     box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
+    background-color: #F2F0FF;
 
 }
 
@@ -129,8 +130,6 @@ header {
     flex-direction: row-reverse;
     background-color: #F2F0FF;
     padding: 40px;
-    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
 
 }
 
@@ -174,10 +173,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #F2F0FF;
-    padding: 40px;
-    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    border: #000 solid 1px;
+    padding: 40px 60px;
 
 }
 
@@ -185,7 +181,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 0 0 40px ;
+    margin: 0 0 40px 40px ;
 }
 
 .worth-text img {
@@ -210,7 +206,7 @@ header {
     flex-shrink: 2;
     border-radius: 8px;
     box-shadow: 2px 14px 8px rgba(0, 0, 0, 0.1);
-    margin: 30px 20px 20px;
+    margin: 30px 20px 120px;
 }
 
 .blokjes-wrapper {
