@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+h1 {
+    font-family: 'Merriweather', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -9,16 +28,21 @@ main{
 
 
 header {
-    background: #F2F0FF;
+    background: #ffffff;
     /*Mocht een verouderde browser geen gradients ondersteunen, dan valt de browser terug op de "effen" achtergrondkleur hierboven*/
     background: linear-gradient(129deg, #4B49E8 0%, #4B49E8 26%, #5722CD  100%);
     color: #ffffff;
-    padding: 8px 0 120px;
+    padding: 8px 0 -20px;
     text-align: center;
     font-family: Arial, sans-serif;
 }
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
-.header button {
+
+.header-wrapper button {
     width: 250px;
     align-self: center;
     font-size: 14px;
@@ -31,7 +55,7 @@ header {
     border-radius: 50px;
     box-shadow: 0 5px 8px 4px rgba(0, 0, 0, .2);
     padding: 20px 20px;
-    margin: 28px 0;
+    margin: 14px 0 130px;
 }
 
 
@@ -47,7 +71,6 @@ header {
     gap: 35px;
     margin: 20px 35px;
     list-style: none; /* Verwijdert standaard opsommingstekens */
-    padding: 0;
 }
 
 .header-nav-list a {
@@ -56,22 +79,52 @@ header {
 }
 
 
+.header h1 {
+    font-size: 32px;
+
+}
+
+.header p {
+    font-size: 24px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Verspreid inhoud verticaal */
+    height: 100%; /* Zorg dat de header-text de volledige hoogte neemt */
+}
+
+
+
+
+/* heb dit van NOVI gekopieerd heb zelf geen idee hoe het moet implementeren */
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
 
 .info {
-    font-size: 28px;
+    font-size: 24px;
     color: #5722CD;
     text-align: center;
     padding: 100px;
     background-color: rgb(255, 255, 255);
 }
+
 .klik {
     font-size: 16px;
+    font-family: Arial, sans-serif;
     flex-basis: auto;
     text-align: center; 
     background-color: #ffffff;
     padding: 20px 0 60px;
     color: #0C0C0C;
-
 }
 
 .klik a {
@@ -79,12 +132,17 @@ header {
     color: #5722CD;
 }
 
+main a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
 .rolling-stone-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
-    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1); */
     background-color: #F2F0FF;
 
 }
@@ -115,6 +173,7 @@ header {
     max-width: 100%;
     display: flex;
     justify-content: center;
+    flex-grow: 0;
     flex-shrink: 2;
     border-radius: 8px;
     box-shadow: 2px 14px 8px rgba(0, 0, 0, 0.1);
@@ -159,6 +218,7 @@ header {
     max-width: 50%;
     display: flex;
     justify-content: center;
+    flex-grow: 0;
     flex-shrink: 2;
     border-radius: 8px;
     box-shadow: 2px 14px 8px rgba(0, 0, 0, 0.1);
@@ -203,6 +263,7 @@ header {
     max-width: 100%;
     display: flex;
     justify-content: center;
+    flex-grow: 0;
     flex-shrink: 2;
     border-radius: 8px;
     box-shadow: 2px 14px 8px rgba(0, 0, 0, 0.1);
@@ -271,6 +332,7 @@ header {
 .contact-info-blokjes {
     display: flex;
     justify-content: center;
+    width: 100%;;
     gap: 40px;
     padding: 20px 0;
 }
@@ -331,6 +393,14 @@ label {
     margin: 28px 0;
 }
 
+.contact-info h1 {
+    font-size: 38px;
+
+}
+.contact-info p {
+    font-size: 16px;
+
+}
 
 footer {
     background-color: #000000;
