@@ -96,17 +96,11 @@ header {
 }
 
 
-
-
 /* heb dit van NOVI gekopieerd heb zelf geen idee hoe het moet implementeren */
 .images {
     display: flex;
     justify-content: center;
 }
-
-
-
-
 
 
 .info {
@@ -180,9 +174,6 @@ main a {
     margin: 30px 20px 20px;
 }
 
-
-
-
 .variety-content {
     display: flex;
     justify-content: space-between;
@@ -224,9 +215,6 @@ main a {
     box-shadow: 2px 14px 8px rgba(0, 0, 0, 0.1);
     margin: 30px 20px 20px;
 }
-
-
-
 
 .worth-content {
     display: flex;
@@ -337,8 +325,6 @@ main a {
     padding: 20px 0;
 }
 
-
-
 label {
     display: block; /* Zorgt ervoor dat het label boven de input verschijnt */
     margin-top: 20px; /* Ruimte tussen het label en het inputveld */
@@ -410,3 +396,5 @@ footer {
     font-size: 12px;
     font-family: Arial, sans-serif;
 }
+
+/* moet even kijken naar dubbele code (clean code) */
