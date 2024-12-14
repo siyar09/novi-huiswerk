@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 
 h1 {
     font-family: 'Merriweather', sans-serif;
@@ -63,6 +64,7 @@ header {
     display: flex;
     flex-direction: column;
     color: #000000;
+    margin-bottom: 20px;
 }
 
 .header-nav-list {
@@ -156,12 +158,34 @@ main a {
 
 .rolling-stone-text p {
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+.view-project {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: #5e45db; /* Paarse kleur */
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block; /* Zorgt dat pseudo-element goed werkt */
 }
 
-.rolling-stone-text a {
-    margin-top: 30px;
-    text-decoration: none;
+.view-project::after {
+    content: ""; /* Maak het lijntje zichtbaar */
+    position: absolute;
+    top: 50%; /* Zet de lijn verticaal in het midden van de tekst */
+    margin-left: 10px;
+    width: 20px; /* Vaste breedte voor het lijntje */
+    height: 2px; /* Dikte van het lijntje */
+    background-color: #5c3bfe; /* Kleur van de lijn */
+    transform: translateY(-50%); /* Centreer het lijntje verticaal */
+    transition: width 0.3s ease; /* Vloeiende overgang bij hover */
 }
+
+.view-project:hover::after {
+    width: 50px; /* Verander de breedte van het lijntje bij hover */
+}
+
 
 .rolling-stone-img {
     max-width: 100%;
@@ -213,7 +237,7 @@ main a {
     flex-shrink: 2;
     border-radius: 8px;
     box-shadow: 2px 14px 8px rgba(0, 0, 0, 0.1);
-    margin: 30px 20px 20px;
+    margin: 30px 80px 20px;
 }
 
 .worth-content {
@@ -398,3 +422,39 @@ footer {
 }
 
 /* moet even kijken naar dubbele code (clean code) */
+@media (max-width: 768px) {
+    .rolling-stone-content {
+        flex-direction: column; /* Zorgt dat de inhoud onder elkaar staat op kleinere schermen */
+        align-items: center;
+    }
+
+    .rolling-stone-img {
+        width: 80%; /* Zorgt dat de afbeelding minder ruimte inneemt op kleine schermen */
+    }
+
+    .variety-content {
+        flex-direction: column; /* Zorgt dat de inhoud onder elkaar staat op kleinere schermen */
+        align-items: center;
+    }
+
+    .variety-img {
+        width: 80%; /* Zorgt dat de afbeelding minder ruimte inneemt op kleine schermen */
+    }
+
+    .worth-content {
+        flex-direction: column; /* Zorgt dat de inhoud onder elkaar staat op kleinere schermen */
+        align-items: center;
+    }
+
+    .worth-img {
+        width: 80%; /* Zorgt dat de afbeelding minder ruimte inneemt op kleine schermen */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .rolling-stone-img img {
+        width: 50%; /* Vul de breedte van de container op hele kleine schermen */
+        max-width: 150px; /* Nog een kleinere limiet */
+    }
+}
