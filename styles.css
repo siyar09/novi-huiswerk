@@ -138,7 +138,6 @@ main a {
     align-items: center;
     justify-content: space-between;
     padding: 40px;
-    /* box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1); */
     background-color: #F2F0FF;
 
 }
@@ -164,7 +163,7 @@ main a {
     position: relative;
     text-decoration: none;
     font-weight: bold;
-    color: #5e45db; /* Paarse kleur */
+    color: #5e45db; 
     text-transform: uppercase;
     font-size: 14px;
     display: inline-block; /* Zorgt dat pseudo-element goed werkt */
@@ -173,17 +172,17 @@ main a {
 .view-project::after {
     content: ""; /* Maak het lijntje zichtbaar */
     position: absolute;
-    top: 50%; /* Zet de lijn verticaal in het midden van de tekst */
+    top: 50%; 
     margin-left: 10px;
-    width: 20px; /* Vaste breedte voor het lijntje */
-    height: 2px; /* Dikte van het lijntje */
-    background-color: #5c3bfe; /* Kleur van de lijn */
-    transform: translateY(-50%); /* Centreer het lijntje verticaal */
-    transition: width 0.3s ease; /* Vloeiende overgang bij hover */
+    width: 20px; 
+    height: 2px; 
+    background-color: #5c3bfe; 
+    transform: translateY(-50%); 
+    transition: width 0.3s ease;
 }
 
 .view-project:hover::after {
-    width: 50px; /* Verander de breedte van het lijntje bij hover */
+    width: 50px; 
 }
 
 
@@ -284,7 +283,7 @@ main a {
 
 .blokjes-wrapper {
     display: flex;
-    justify-content: center; /* Centreert de blokken horizontaal */
+    justify-content: center; 
     padding: 60px 0 60px;
     background-color: #ffffff;
 }
@@ -298,7 +297,6 @@ main a {
 }
 
 .blokjes {
-    /* De tegel moet in de basis 480px breed zijn */
     flex-basis: 384px;
     flex-grow: 0;
     flex-shrink: 1;
@@ -310,22 +308,22 @@ main a {
     box-shadow: 0 11px 16px 0 rgba(0, 0, 0, 0.1);
     color: #7A7A7A;
     font-size: 16px;
-    height: 300px; /* Standaard hoogte voor de blokken, je kunt dit aanpassen afhankelijk van de gewenste grootte */
+    height: 300px; 
 }
 
 .blokjes img {
-    width: 90px; /* Pictogram grootte aangepast */
+    width: 90px; 
     height: auto;
 }
 
 .blokjes h3 {
-    font-size: 26px; /* Kleinere lettergrootte */
+    font-size: 26px; 
     color: #5722CD;
-    margin-bottom: 6px; /* Minder ruimte onder de titel */
+    margin-bottom: 6px; 
 }
 
 .blokjes p {
-    font-size: 14px; /* Kleinere lettergrootte voor de tekst */
+    font-size: 14px; 
     color: #555;
     line-height: 1.5;
 }
@@ -350,10 +348,10 @@ main a {
 }
 
 label {
-    display: block; /* Zorgt ervoor dat het label boven de input verschijnt */
-    margin-top: 20px; /* Ruimte tussen het label en het inputveld */
-    font-size: 16px; /* Pas eventueel de tekstgrootte aan */
-    text-align: left; /* Zorg dat het label links blijft uitgelijnd */
+    display: block; 
+    margin-top: 20px; 
+    font-size: 16px; 
+    text-align: left; 
 }
 
 #name {
@@ -382,9 +380,9 @@ label {
 
 .contact-info-blokjes form {
     display: flex;
-    flex-direction: column; /* Zorgt dat alle elementen onder elkaar staan */
+    flex-direction: column; 
     text-align: left;
-    gap: 2px; /* Ruimte tussen velden en knop */
+    gap: 2px; 
 }
 
 .contact-info-blokjes button {
